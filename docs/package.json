@@ -1,0 +1,24 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "private": true,
+    "description": "docs",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "gatsby": "^2.32.3",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.4.3",
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.2.1"
+    }
+}
