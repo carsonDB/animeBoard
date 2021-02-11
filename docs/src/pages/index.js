@@ -64,8 +64,14 @@ const ButtonStyle = {
   margin: 5
 }
 
+
 // markup
 const IndexPage = () => {
+
+  const downloadPrompt = () => {
+    // todo...
+  }
+
   return <main style={pageStyles}>
       <title>AnimeBoard</title>
       <h3>
@@ -75,11 +81,23 @@ const IndexPage = () => {
         就可以快速做出一个直观漂亮的可视化动画视频。
       <br />
       <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
-          <Button style={ButtonStyle} variant='success' href='./animeBoard-win64.exe'>下载(win64)</Button>
+          <Button style={ButtonStyle} variant='success'
+            href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
           <Button style={ButtonStyle} variant='info' 
             href='https://github.com/carsonDB/animeBoard#animeboard' target="_blank">快速入门</Button>
         目前只支持win64。
       </div>
+      <div>
+        <h4>例子:</h4>
+        <a href='http://anime-board.oss-cn-beijing.aliyuncs.com/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB.zip' >
+          进程和线程的区别
+        </a>
+        （下载压缩包，解压后即可导入）
+        <br />
+        发布的视频(<a href='https://www.ixigua.com/i6926416351611322891/' >西瓜视频</a>
+        , <a href='https://www.bilibili.com/video/BV1Wr4y1P7Yr/' >B站</a>)
+      </div>
+
   </main>
 }
 
