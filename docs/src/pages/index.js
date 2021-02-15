@@ -1,5 +1,4 @@
 import * as React from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'
 
 // styles
@@ -111,7 +110,7 @@ const IndexPage = () => {
   }
 
   return <main style={pageStyles}>
-      <div style={{display: "flex"}} >
+      <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 20}} >
         <Intro />
         <iframe src="//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=1" 
           style={VideoStyle} scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
