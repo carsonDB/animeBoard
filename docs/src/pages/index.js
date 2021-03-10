@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Button } from 'react-bootstrap'
+import { Header } from '../components/header'
 
 // styles
 const pageStyles = {
@@ -7,58 +8,6 @@ const pageStyles = {
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: "300",
-  fontSize: "24px",
-  maxWidth: "560px",
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: "16px",
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: "14px",
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
 const ButtonStyle = {
   margin: 5
 }
@@ -81,7 +30,7 @@ const Intro = () => {
           <Button style={ButtonStyle} variant='success'
             href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
           <Button style={ButtonStyle} variant='info' 
-            href='https://github.com/carsonDB/animeBoard#animeboard' target="_blank">快速入门</Button>
+            href='/tutorial/quick-started'>快速入门</Button>
         目前只支持win64。
       </div>
     <Examples />
@@ -109,13 +58,16 @@ const IndexPage = () => {
     // todo...
   }
 
-  return <main style={pageStyles}>
-      <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 20}} >
-        <Intro />
-        <iframe src="//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=1" 
-          style={VideoStyle} scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-      </div>
-  </main>
+  return <div>
+    <Header />
+    <main style={pageStyles}>
+        <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 20}} >
+          <Intro />
+          <iframe src="//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=1" 
+            style={VideoStyle} scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+    </main>
+  </div>
 }
 
 export default IndexPage
