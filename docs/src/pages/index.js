@@ -1,6 +1,7 @@
+import { Link } from "gatsby"
 import * as React from "react"
 import { Button } from 'react-bootstrap'
-import { Header } from '../components/header'
+import Header from '../components/header'
 
 // styles
 const pageStyles = {
@@ -9,7 +10,7 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const ButtonStyle = {
-  margin: 5
+  margin: 5,
 }
 
 const VideoStyle = {
@@ -29,8 +30,9 @@ const Intro = () => {
     <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
           <Button style={ButtonStyle} variant='success'
             href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
-          <Button style={ButtonStyle} variant='info' 
-            href='/tutorial/quick-started'>快速入门</Button>
+          <Button style={ButtonStyle} variant='info' as={Link} to='/tutorial/quick-started' >
+            快速入门
+          </Button>
         目前只支持win64。
       </div>
     <Examples />

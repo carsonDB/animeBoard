@@ -1,7 +1,7 @@
 module.exports = {
+  pathPrefix: "/animeBoard",
   siteMetadata: {
     title: "docs",
-    pathPrefix: "/animeBoard",
   },
   plugins: [
     {

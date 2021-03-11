@@ -5,3 +5,8 @@
 
 [B站介绍视频](https://www.bilibili.com/video/BV1aa411F7Y2/)
 (和剪辑软件的比较)
+
+## 文档技术栈
+介绍页面、文档教程的源代码在`docs`文件夹中，使用`Gatsby.js`框架。
+- 介绍主页在[`./docs/src/pages/index.js`](./docs/src/pages/index.js)
+- 文档教程的Markdown文件在[`docs/src/markdown-pages`](./docs/src/markdown-pages)。

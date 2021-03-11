@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Navbar } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
 const StyledHeader = styled.div`
     grid-area: header;
@@ -9,8 +10,8 @@ const StyledHeader = styled.div`
 export default function Header() {
     return <StyledHeader>
         <Navbar bg="dark" variant="dark"  >
-            <Navbar.Brand href="/">主页</Navbar.Brand>
-            <Navbar.Brand href="/tutorial/quick-started">快速入门</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">主页</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/tutorial/quick-started">快速入门</Navbar.Brand>
             <Navbar.Brand href="https://github.com/carsonDB/animeBoard">GitHub</Navbar.Brand>
         </Navbar>
     </StyledHeader>
