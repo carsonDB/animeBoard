@@ -16,9 +16,9 @@ const StyledContent = styled.div`
     grid-area: main;
     width: 80%;
     img {
-        margin: 30px;
+        margin: 30px 0px;
         display: block;
-        max-width: 80%;
+        max-width: 100%;
     }
     h1 {
         font-size: 3rem;
