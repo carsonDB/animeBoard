@@ -36,8 +36,8 @@ data-styled.g4[id="tutorial__StyledContent-sc-1uhnts6-1"]{content:"jRUgEc,"}/*!s
 <h3>序列性动画</h3>
 <p>在<a href="/animeBoard/tutorial/elements-keyword">元素与关键词</a>中，每次元素的变化，都是处于某一个关键词中。
 但是，如果现在想要让一个元素按照顺序做多个动画，比如：让一个小球先变大，再移动，再变小。
-那么，这样它就需要3个关键词来触发3个动画。那么现在，序列行动画可以让这3个动画合起来，由一个关键词触发。</p>
-<p>几乎每个元素，您都可以在元素聚焦后，看到右下设置框的右上角有一排数字。初始是只有一个0。代表一个阶段。
+那么，这样它就需要3个关键词来触发3个动画。那么现在，序列性动画可以让这3个动画合起来，由一个关键词触发。</p>
+<p>几乎每个元素，您都可以在元素聚焦后，看到右下设置框的右上角有一排数字。初始时只有一个0。代表一个阶段。
 每按一次加号，就可以创建多个阶段。不同的阶段的切换，会产生变换动画。
 <span
       class="gatsby-resp-image-wrapper"
@@ -70,14 +70,22 @@ data-styled.g4[id="tutorial__StyledContent-sc-1uhnts6-1"]{content:"jRUgEc,"}/*!s
 <h3>文字动画</h3>
 <p>文字在做切换动画时，软件会比较前后文本内容，自动判断新加的文字、删除的文字、保留的文字。
 针对这3种文字，自动产生对应的动画。</p>
+<h3>镜头变化</h3>
+<p>没有元素聚焦的时候，右下角显示的就是本场景的设置框。
+设置框中的第一个缩略图，反应的就是当前镜头的状态。默认是覆盖全部。
+把鼠标放到上面，用鼠标的滚轮上下滚动，您就可以看到，镜头的放大、缩小。
+然后，鼠标拖动绿色的覆盖块，就可以移动镜头了。
+<img src="/animeBoard/8013a16487d39dd438561a01551abd6f/sceneScroll.gif"></p>
+<p>场景切换的时间若是<strong>0</strong>时（默认），镜头就是突然切换。若需要镜头过渡动画，则设置对应的时间就可以了。</p>
 <hr>
-<h2>正在施工中。。。</h2>
-<h2>画方框(圆)</h2>
-<h2>镜头变化</h2>
-<h2>元素变化</h2>
-<pre><code>- 移动
-- 2D/3D旋转
-- 
-</code></pre>
-<h2>强调(伴随性)动画</h2>
-<h2>序列动画</h2></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/tutorial/make-animation";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e4ff66ed5ec0b4bd2598.js"],"app":["/app-8ecaac7c1b985c249fdc.js"],"component---src-pages-404-js":["/component---src-pages-404-js-29ed3715f54cf9c244c0.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e873ea1ee28b54978012.js"],"component---src-templates-tutorial-js":["/component---src-templates-tutorial-js-993bdcdcef6010e68897.js"]};/*]]>*/</script><script src="/animeBoard/polyfill-e4ff66ed5ec0b4bd2598.js" nomodule=""></script><script src="/animeBoard/component---src-templates-tutorial-js-993bdcdcef6010e68897.js" async=""></script><script src="/animeBoard/cc866bb6a4017375a08fe8ee30776cb5d74a4b58-2d5df58186546ec18775.js" async=""></script><script src="/animeBoard/app-8ecaac7c1b985c249fdc.js" async=""></script><script src="/animeBoard/styles-8fab2804fb6f85b824b6.js" async=""></script><script src="/animeBoard/framework-d585a04b7d285a7760d6.js" async=""></script><script src="/animeBoard/webpack-runtime-d55409a8d93717225783.js" async=""></script></body></html>
+<h2>以下施工中。。。</h2>
+<h2>复杂动画</h2>
+<h3>等时差动画（瞎编的🤣）</h3>
+<p>当有许多的元素一起运动的时候，比如一起出现。
+<img src="">
+那么，同时出现可能不是很好看。
+设置每个元素的延迟，按照等差数列，就会出现更好看的群体动画。
+<img src=""></p>
+<p>这里的延迟设置是按照您选中元素的顺序来安排的。
+您可以手动设置元素的聚焦顺序，就可以改变出现的顺序。
+<img src=""></p></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/tutorial/make-animation";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e4ff66ed5ec0b4bd2598.js"],"app":["/app-8ecaac7c1b985c249fdc.js"],"component---src-pages-404-js":["/component---src-pages-404-js-29ed3715f54cf9c244c0.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e873ea1ee28b54978012.js"],"component---src-templates-tutorial-js":["/component---src-templates-tutorial-js-993bdcdcef6010e68897.js"]};/*]]>*/</script><script src="/animeBoard/polyfill-e4ff66ed5ec0b4bd2598.js" nomodule=""></script><script src="/animeBoard/component---src-templates-tutorial-js-993bdcdcef6010e68897.js" async=""></script><script src="/animeBoard/cc866bb6a4017375a08fe8ee30776cb5d74a4b58-2d5df58186546ec18775.js" async=""></script><script src="/animeBoard/app-8ecaac7c1b985c249fdc.js" async=""></script><script src="/animeBoard/styles-8fab2804fb6f85b824b6.js" async=""></script><script src="/animeBoard/framework-d585a04b7d285a7760d6.js" async=""></script><script src="/animeBoard/webpack-runtime-d55409a8d93717225783.js" async=""></script></body></html>
