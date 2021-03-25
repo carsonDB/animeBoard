@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import { Button } from 'react-bootstrap'
+import { Badge, Button } from 'react-bootstrap'
 import Header from '../components/header'
 
 // styles
@@ -28,13 +28,14 @@ const Intro = () => {
       就可以快速做出一个直观漂亮的可视化动画视频。
     <br />
     <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
-          <Button style={ButtonStyle} variant='success'
-            href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
-          <Button style={ButtonStyle} variant='info' as={Link} to='/tutorial/quick-started' >
-            快速入门
-          </Button>
-        目前只支持win64。
-      </div>
+      <Button style={ButtonStyle} variant='success'
+        href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
+      <Button style={ButtonStyle} variant='info' as={Link} to='/tutorial/quick-started' >
+        快速入门
+      </Button>
+      目前只支持win64。
+    </div>
+    <div>软件交流QQ群：620823259</div>
     <Examples />
   </div>
 }
