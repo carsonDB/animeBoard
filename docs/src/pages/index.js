@@ -29,7 +29,7 @@ const Intro = () => {
     <br />
     <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
       <Button style={ButtonStyle} variant='success'
-        href='https://anime-board.oss-cn-beijing.aliyuncs.com/animeBoard-win64.exe'>下载(win64)</Button>
+        href='https://anime-board.oss-cn-beijing.aliyuncs.com/anime-board Setup 0.3.0.exe'>下载(win64)</Button>
       <Button style={ButtonStyle} variant='info' as={Link} to='/tutorial/quick-started' >
         快速入门
       </Button>
@@ -37,6 +37,12 @@ const Intro = () => {
     </div>
     <div>软件交流QQ群：620823259</div>
     <Examples />
+    <br />
+    <div style={{fontSize: '0.3em', opacity: 0.8}} >
+      现在，软件属于测试阶段，不会收费。未来从正式版开始，将会开始有免费版、付费版的尝试。
+      我的理念是，如果您只是偶尔用一下，做个视频，免费使用。如果您每月周期性制作多个视频,
+      或者，需要对视频质量（如：分辨率）有更高的追求时，才需购买付费版。
+    </div>
   </div>
 }
 
