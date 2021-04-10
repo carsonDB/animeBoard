@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import * as React from "react"
-import { Badge, Button } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import Header from '../components/header'
 
 // styles
