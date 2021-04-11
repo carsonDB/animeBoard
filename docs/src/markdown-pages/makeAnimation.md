@@ -19,6 +19,18 @@ title: "制作动画"
 在右下角的**运动**标签中，可以设置具体的动画方式。
 
 *注：消失动画目前有Bug，所以暂时不能用。*
+*还有，这里的动画类型未来可能会发生一些变动。现在就暂时用英文代号。*
+#### 出现动画类型
+先以基本的方框动画开始
+- fadeUp ![](../images/fadeUp.gif)
+- scaleFadeUp ![](../images/scaleFadeUp.gif)
+- appearMoveFade ![](../images/appearMoveFade.gif)
+- peekIn ![](../images/peekIn.gif)
+- wideIn ![](../images/wideIn.gif)
+- flashAppear ![](../images/flashAppear.gif)
+- moveFromCopy 同一页面中，同一类元素（如方框）![](../images/moveFromCopy.gif)。
+- svgAppear ![](../images/svgAppear.gif)
+
 
 ### 转换动画
 同一个元素，从一种状态转换成另一种状态的过渡动画。这个不需要自己设置。

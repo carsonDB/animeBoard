@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/monitor-edit"
-date: "2021-03-16"
+date: "2021-04-10"
 title: "画面编辑"
 ---
 
