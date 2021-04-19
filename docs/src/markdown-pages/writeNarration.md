@@ -21,7 +21,7 @@ title: "写文稿"
 ![](../images/blockPlayButton.jpg)
 
 ## 字幕
-可以在写文稿的同时，直接把右上角字幕的按钮打开，就直接在画面中看到字幕了。
+可以在写文稿时，字幕默认是打开的，在更多按钮中可以设置。
 ![](../images/subtitleButton.jpg)
 
 ## 语言

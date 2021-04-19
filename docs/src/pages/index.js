@@ -29,7 +29,7 @@ const Intro = () => {
     <br />
     <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
       <Button style={ButtonStyle} variant='success'
-        href='https://anime-board.oss-cn-beijing.aliyuncs.com/anime-board Setup 0.3.0.exe'>下载(win64)</Button>
+        href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.1.exe'>下载(win64)</Button>
       <Button style={ButtonStyle} variant='info' as={Link} to='/tutorial/quick-started' >
         快速入门
       </Button>
