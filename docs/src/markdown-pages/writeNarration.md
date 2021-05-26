@@ -4,6 +4,7 @@ date: "2021-03-09"
 title: "写文稿"
 ---
 
+▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=3)
 
 本章将带您了解文稿的全部功能和细节。
 

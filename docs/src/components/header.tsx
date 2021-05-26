@@ -14,6 +14,7 @@ export default function Header() {
             <Navbar.Brand as={Link} to="/tutorial/quick-started">快速入门</Navbar.Brand>
             <Navbar.Brand as={Link} to="/tutorial/document-list">详细文档</Navbar.Brand>
             <Navbar.Brand href="https://github.com/carsonDB/animeBoard">GitHub</Navbar.Brand>
+            <Navbar.Brand href="https://gitee.com/carsonDB/animeBoard">Gitee</Navbar.Brand>
         </Navbar>
     </StyledHeader>
 }

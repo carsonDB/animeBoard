@@ -4,6 +4,8 @@ date: "2021-03-16"
 title: "制作动画"
 ---
 
+▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=6)
+
 本章将带您了解有关于可视化动画的一切。
 
 ## 动画概念
@@ -22,14 +24,14 @@ title: "制作动画"
 *还有，这里的动画类型未来可能会发生一些变动。现在就暂时用英文代号。*
 #### 出现动画类型
 先以基本的方框动画开始
-- fadeUp ![](../images/fadeUp.gif)
-- scaleFadeUp ![](../images/scaleFadeUp.gif)
-- appearMoveFade ![](../images/appearMoveFade.gif)
-- peekIn ![](../images/peekIn.gif)
-- wideIn ![](../images/wideIn.gif)
-- flashAppear ![](../images/flashAppear.gif)
-- moveFromCopy 同一页面中，同一类元素（如方框）![](../images/moveFromCopy.gif)。
-- svgAppear ![](../images/svgAppear.gif)
+- 淡入 ![](../images/fadeUp.gif)
+- 放大淡入 ![](../images/scaleFadeUp.gif)
+- 移动淡入 ![](../images/appearMoveFade.gif)
+- 切入 ![](../images/peekIn.gif)
+- 擦入 ![](../images/wideIn.gif)
+- 闪入 ![](../images/flashAppear.gif)
+- 复制源移入 同一页面中，同一类元素（如方框）![](../images/moveFromCopy.gif)。
+- 描绘 ![](../images/svgAppear.gif)
 
 
 ### 转换动画

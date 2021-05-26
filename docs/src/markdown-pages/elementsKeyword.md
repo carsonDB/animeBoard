@@ -4,6 +4,8 @@ date: "2021-03-10"
 title: "元素与关键词"
 ---
 
+▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=4)
+
 本章将带您了解元素与关键词的关系。
 
 ## 基本概念

@@ -24,8 +24,8 @@ const Intro = () => {
     <h3>
       动画黑板
     </h3>
-      是一个知识类视频制作工具。只需要类似PPT/Keynote的使用门槛和操作方式，
-      就可以快速做出一个直观漂亮的可视化动画视频。
+      是一个知识类视频制作工具。画面编辑类似PPT/Keynote的使用方式。总体使用门槛也差不多，
+      可以快速做出一个直观漂亮的可视化动画视频。
     <br />
     <div style={{padding: 10, display: 'flex', alignItems: 'center'}} >
       <Button style={ButtonStyle} variant='success'

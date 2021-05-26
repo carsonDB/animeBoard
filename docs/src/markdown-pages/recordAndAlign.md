@@ -4,6 +4,8 @@ date: "2021-03-10"
 title: "录音与对齐"
 ---
 
+▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=7)
+
 本章将带您介绍如何录音，以及自动对齐功能。
 
 ## 录音
