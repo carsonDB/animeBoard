@@ -6,6 +6,9 @@ title: "快速入门"
 
 本章将带您快速做一个视频。
 
+## 详细文档
+详细的文档和视频教程请点击[这里](/tutorial/document-list)
+
 ## 下载安装
 目前，**测试版**下载按照可能会遇到一些小问题，具体请看[视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=2&share_source=copy_web)。
 
@@ -65,5 +68,9 @@ title: "快速入门"
 
 ## 导出视频
 然后点击左上角的导出，设置一下，就可以导出了。
+
+
+## 详细文档
+详细的文档和视频教程请点击[这里](/tutorial/document-list)
 
 
