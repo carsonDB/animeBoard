@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
-import * as React from "react"
-import { Badge, Button, ListGroup } from 'react-bootstrap'
+import React, { useState } from "react"
+import { Badge, Button, ListGroup, Modal } from 'react-bootstrap'
 import Header from '../components/header'
 
 
@@ -31,6 +31,8 @@ const IndexPage = () => {
 }
 
 const Intro = () => {
+    const [downloadPrompt, setDownloadPrompt] = useState(false)
+
     return <div>
         <title>AnimeBoard</title>
         <h2>
@@ -40,13 +42,15 @@ const Intro = () => {
             可以快速做出一个直观漂亮的可视化动画视频。
         <br />
         <div style={{margin: '10px 0px'}} >
-            <Button variant='success' href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.2.exe'>
+            <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} 
+                    href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.3.exe'>
                 下载(win64)
             </Button>{' '}
+            {downloadPrompt && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
             <Button variant='info' as={Link} to='/tutorial/quick-started' >快速入门</Button>
         </div>
         <Button size='sm' variant='secondary' as={Link} to='#feedback' >
-            反馈
+            反馈&联系作者
         </Button>
         <Badge>目前只支持win64。</Badge>
         <br /><br />
@@ -81,6 +85,24 @@ function Feedback() {
         </ListGroup>
         </div>
     </div>
+}
+
+function DownloadPrompt(props) {
+
+    return <Modal show={true} onHide={props.onCancel}>
+        <Modal.Header closeButton>
+        <Modal.Title>下载安装遇到问题？</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+            请点击<a href={'https://www.bilibili.com/video/BV1aa411F7Y2?p=2&share_source=copy_web'} >
+                测试版安装教程</a>
+        </Modal.Body>
+        <Modal.Footer>
+        <Button variant="secondary" onClick={props.onCancel}>
+            关闭
+        </Button>
+        </Modal.Footer>
+    </Modal>
 }
 
 export default IndexPage
