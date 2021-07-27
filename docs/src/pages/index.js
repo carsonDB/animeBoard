@@ -43,7 +43,7 @@ const Intro = () => {
         <br />
         <div style={{margin: '10px 0px'}} >
             <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} 
-                    href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.3.exe'>
+                    href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.4.exe'>
                 下载(win64)
             </Button>{' '}
             {downloadPrompt && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
