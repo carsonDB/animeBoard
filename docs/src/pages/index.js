@@ -30,20 +30,21 @@ const IndexPage = () => {
     </div>
 }
 
+const version = `0.4.0`
 const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
 
     return <div>
         <title>AnimeBoard</title>
         <h2>
-            动画黑板
+            动画黑板<Badge bg='secondary' >{`v${version}`}</Badge>
         </h2>
             是一个知识类视频制作工具。画面编辑类似PPT/Keynote的使用方式。总体使用门槛也差不多，
             可以快速做出一个直观漂亮的可视化动画视频。
         <br />
         <div style={{margin: '10px 0px'}} >
             <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} 
-                    href='https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup 0.3.4.exe'>
+                    href={`https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe`}>
                 下载(win64)
             </Button>{' '}
             {downloadPrompt && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
