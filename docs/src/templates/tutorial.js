@@ -46,7 +46,7 @@ export default function Template({
         <Sidebar />
         <StyledContent>
             <h1>{frontmatter.title}</h1>
-            <h6>{frontmatter.date}</h6>
+            <h5>版本{frontmatter.version}</h5>
             <div style={{marginTop: '4em'}} dangerouslySetInnerHTML={{ __html: html }}/>
         </StyledContent>
     </StyledContainer>
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
         markdownRemark(frontmatter: { slug: { eq: $slug } }) {
             html
             frontmatter {
-                date(formatString: "MMMM DD, YYYY")
+                version
                 slug
                 title
             }

@@ -37,9 +37,9 @@ const Intro = () => {
     return <div>
         <title>AnimeBoard</title>
         <h2>
-            动画黑板<Badge bg='secondary' >{`v${version}`}</Badge>
+            动画黑板<Badge bg='secondary' >{`v${version}(测试版)`}</Badge>
         </h2>
-            是一个知识类视频制作工具。画面编辑类似PPT/Keynote的使用方式。总体使用门槛也差不多，
+            是一个知识类视频制作工具，用于制作演示视频。画面编辑部分类似PPT/Keynote的使用方式。总体使用门槛也差不多，
             可以快速做出一个直观漂亮的可视化动画视频。
         <br />
         <div style={{margin: '10px 0px'}} >
