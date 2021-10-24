@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
+import { useTranslation } from 'react-i18next'
 import React, { useState } from "react"
 import { Badge, Button, ListGroup, Modal } from 'react-bootstrap'
+import { Helmet } from "react-helmet"
 import Header from '../components/header'
 
 
@@ -8,21 +10,27 @@ const VideoStyle = {
     width: '45vw',
     height: '27vw',
 }
+const pageStyles = {
+    color: "#232129",
+    padding: "96px",
+    fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
 
-const IndexPage = () => {
-    const pageStyles = {
-        color: "#232129",
-        padding: "96px",
-        fontFamily: "-apple-system, Roboto, sans-serif, serif",
-    }
+export default function IndexPage() {
+    const { t } = useTranslation()
 
     return <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>{t('animeBoard')}</title>
+          {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+        </Helmet>
         <Header />
         <div style={pageStyles}>
                 <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 20}} >
                     <Intro />
                     <iframe src="//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=1" 
-                        style={VideoStyle} scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                        style={VideoStyle} scrolling="no" border="0" frameBorder="no" framespacing="0" allowFullScreen={true}> </iframe>
                 </div>
         </div>
         <hr style={{color: 'black', height: 4}} />
@@ -30,12 +38,11 @@ const IndexPage = () => {
     </div>
 }
 
-const version = `0.4.0`
+const version = `0.4.1`
 const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
 
     return <div>
-        <title>AnimeBoard</title>
         <h2>
             动画黑板<Badge bg='secondary' >{`v${version}(测试版)`}</Badge>
         </h2>
@@ -105,5 +112,3 @@ function DownloadPrompt(props) {
         </Modal.Footer>
     </Modal>
 }
-
-export default IndexPage

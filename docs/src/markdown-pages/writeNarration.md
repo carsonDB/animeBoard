@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/write-narration"
-date: "2021-03-09"
+version: "0.4.0"
 title: "写文稿"
 ---
 

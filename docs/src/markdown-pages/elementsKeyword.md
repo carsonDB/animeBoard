@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/elements-keyword"
-date: "2021-03-10"
+version: "0.4.0"
 title: "元素与关键词"
 ---
 

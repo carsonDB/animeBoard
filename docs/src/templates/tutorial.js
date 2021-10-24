@@ -46,7 +46,7 @@ export default function Template({
         <Sidebar />
         <StyledContent>
             <h1>{frontmatter.title}</h1>
-            <h5>版本{frontmatter.version}</h5>
+            <h5>v{frontmatter.version}</h5>
             <div style={{marginTop: '4em'}} dangerouslySetInnerHTML={{ __html: html }}/>
         </StyledContent>
     </StyledContainer>
