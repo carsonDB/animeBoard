@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/write-narration"
-version: "0.4.0"
+lang: zh
 title: "写文稿"
 ---
 

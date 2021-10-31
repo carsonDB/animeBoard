@@ -1,10 +1,8 @@
 ---
 slug: "/tutorial/make-animation"
-version: "0.4.0"
-title: "制作动画"
+lang: en
+title: "Make animations"
 ---
-
-▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=6)
 
 本章将带您了解有关于可视化动画的一切。
 

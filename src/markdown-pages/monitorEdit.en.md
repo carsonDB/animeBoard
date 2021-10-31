@@ -1,10 +1,8 @@
 ---
 slug: "/tutorial/monitor-edit"
-version: "0.4.0"
-title: "画面编辑"
+lang: en
+title: "Monitor editing"
 ---
-
-▶️ [详细的视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=5)
 
 本章将带您介绍右上角画面编辑的所有内容，包括快捷技巧。
 

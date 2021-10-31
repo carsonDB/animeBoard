@@ -10,12 +10,13 @@ const i18next = [
     resolve: `gatsby-plugin-react-i18next`,
     options: {
       localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-      languages: [`en`, `ch`],
+      languages: [`en`, `zh`],
       defaultLanguage: `en`,
       // if you are using Helmet, you must include siteUrl, and make sure you add http:https
       siteUrl: `https://carsondb.github.io/animeBoard`,
       // you can pass any i18next options
       // pass following options to allow message content as a key
+      redirect: false,
       i18nextOptions: {
         interpolation: {
           escapeValue: false // not needed for react as it escapes by default
@@ -23,17 +24,12 @@ const i18next = [
         keySeparator: false,
         nsSeparator: false
       },
-      pages: [
-        {
-          matchPath: '/:lang?/blog/:uid',
-          getLanguageFromPath: true,
-          excludeLanguages: ['en']
-        },
-        {
-          matchPath: '/preview',
-          languages: ['en']
-        }
-      ]
+      // pages: [
+      //   {
+      //     matchPath: '/:lang?/tutorial/:uid',
+      //     getLanguageFromPath: true,
+      //   },
+      // ]
     }
   }
 ]
@@ -55,6 +51,17 @@ const googleAnalytics = [
   },
 ]
 
+const markdown = [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `markdown-pages`,
+      path: `${__dirname}/src/markdown-pages`,
+    },
+  },
+  `gatsby-transformer-remark`,
+]
+
 module.exports = {
   pathPrefix: "/animeBoard",
   siteMetadata: {
@@ -65,20 +72,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     ...i18next,
     ...googleAnalytics,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
+    ...markdown,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

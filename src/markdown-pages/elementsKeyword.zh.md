@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/elements-keyword"
-version: "0.4.0"
+lang: zh
 title: "元素与关键词"
 ---
 

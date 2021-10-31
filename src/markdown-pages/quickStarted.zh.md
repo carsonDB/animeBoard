@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/quick-started"
-version: "0.4.0"
+lang: zh
 title: "快速入门"
 ---
 

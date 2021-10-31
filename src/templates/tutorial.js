@@ -1,5 +1,5 @@
-import React from "react"
 import { graphql } from "gatsby"
+import React from "react"
 import styled from "styled-components"
 import Header from '../components/header'
 import Sidebar from '../components/sidebar'
@@ -36,17 +36,15 @@ const StyledContent = styled.div`
     }
 `
 
-export default function Template({
-    data, // this prop will be injected by the GraphQL query below.
-}) {
+export default function Template({ data }) {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
+
     return <StyledContainer>
         <Header />
         <Sidebar />
         <StyledContent>
             <h1>{frontmatter.title}</h1>
-            <h5>v{frontmatter.version}</h5>
             <div style={{marginTop: '4em'}} dangerouslySetInnerHTML={{ __html: html }}/>
         </StyledContent>
     </StyledContainer>
@@ -54,14 +52,23 @@ export default function Template({
 
 
 export const pageQuery = graphql`
-    query($slug: String!) {
-        markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    query($slug: String!, $language: String!) {
+        markdownRemark(frontmatter: { slug: { eq: $slug }, lang: { eq: $language } }) {
             html
             frontmatter {
-                version
                 slug
                 title
+                lang
             }
         }
+        locales: allLocale(filter: {language: {eq: $language}}) {
+            edges {
+              node {
+                ns
+                data
+                language
+              }
+            }
+          }
     }
 `

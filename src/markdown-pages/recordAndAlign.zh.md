@@ -1,6 +1,6 @@
 ---
 slug: "/tutorial/record-and-align"
-version: "0.4.0"
+lang: zh
 title: "录音与对齐"
 ---
 
