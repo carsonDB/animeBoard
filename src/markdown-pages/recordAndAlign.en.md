@@ -5,13 +5,13 @@ title: "Recording and alignment"
 ---
 
 
-本章将带您介绍如何录音，以及自动对齐功能。
+This chapter will take you to introduce how to record and the automatic alignment function.
 
-## 录音
-最好需要麦克风，在一个安静的环境中录音。
-每一段落单独录音，顺序也没有关系，可以反复录音。
+## Recording
+It is best to need a microphone to record in a quiet environment.
+Each paragraph is recorded separately, and the sequence does not matter, and it can be recorded repeatedly.
 
-如果是已有的音频(支持大部分的格式)，那么直接也可以导入。
+If it is an existing audio (supporting most formats), it can also be imported directly.
 
-## 自动对齐
-每次录音，或导入音频后，软件会自动将音频和文字对齐，形成逐字稿（每个字在音频中的位置）。
+## Automatic alignment
+Every time you record or import audio, the software will automatically align the audio with the text to form a verbatim script (the position of each word in the audio).

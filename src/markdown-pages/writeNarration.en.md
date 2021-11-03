@@ -5,27 +5,27 @@ title: "Write narration"
 ---
 
 
-本章将带您了解文稿的全部功能和细节。
+This chapter will take you to understand all the functions and details of the manuscript.
 
-首先，文稿在这里相当于是**旁白**，或者说是**解说**。
-也就是，视频的播放会完全由文稿的进度来决定的。
-所以，文稿一旦确定了，对应的时间轴中每个词出现的时间点也就确定了。
+First of all, the manuscript here is equivalent to **narration**, or **commentary**.
+That is, the playback of the video will be completely determined by the progress of the manuscript.
+Therefore, once the manuscript is determined, the time point at which each word appears in the corresponding timeline is also determined.
 
-而光标所在的位置，代表当前画面和字幕的时间点。
+The position of the cursor represents the time point of the current picture and subtitles.
 
-## 播放预览
-点击最上面的两个播放按钮，分别是从本段开始播放、从头开始播放。
+## Play preview
+Click the top two play buttons to start playing from this section and play from the beginning.
 ![](../images/playButtons.jpg)
 
-点击每一段落上面的播放按钮就可以预览本段。
+Click the play button above each paragraph to preview the paragraph.
 ![](../images/blockPlayButton.jpg)
 
-## 字幕
-可以在写文稿时，字幕默认是打开的，在更多按钮中可以设置。
+## subtitle
+When writing a manuscript, the subtitles are turned on by default and can be set in the more buttons.
 ![](../images/subtitleButton.jpg)
 
-## 语言
-支持英文和中文。也就是，它会根据文稿中，中文数量的比例、英文数量的比例，来决定着该文稿的语言。
-也就是，不同的文稿可以是不同的语言。这决定着，机器念文稿，以及录音对齐时所采用的语言。
+## Language
+Support English and Chinese. That is, it will determine the language of the manuscript according to the proportion of the number of Chinese and the proportion of the number of English in the manuscript.
+That is, different documents can be in different languages. This determines the language used by the machine to read the manuscript and align the recording.
 
-另外，文稿的语言和软件的语言无关。软件的语言在一台电脑上，会一直是一种。
+In addition, the language of the manuscript has nothing to do with the language of the software. The language of the software will always be one on a computer.

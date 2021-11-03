@@ -5,81 +5,81 @@ title: "Elements and keywords"
 ---
 
 
-本章将带您了解元素与关键词的关系。
+This chapter will take you to understand the relationship between elements and keywords.
 
-## 基本概念
-任意一个元素的创建、删除、消失，可以视为画面的变化。这些变化必须处于某个关键词（<span style="background: yellow">黄色高亮</span>）中。
-关键词的范围包括词中的第一个字的前面间隙，但不包括最后一字的后面间隙。
+## Basic concept
+The creation, deletion, and disappearance of any element can be regarded as a change in the screen. These changes must be in a certain keyword (<span style="background: yellow">yellow highlight</span>).
+The range of keywords includes the space before the first word in the word, but does not include the space after the last word.
 
-## 创建、删除、变换、消失
+## Create, delete, transform, disappear
 
-创建、消失分别对应画面中，元素的出现、消失。
+Creation and disappearance correspond to the appearance and disappearance of elements in the screen respectively.
 
-消失的元素前面一定是已经创建了的。
+The element that disappeared must have been created before.
 
-创建、消失、变换的元素位置会按照当前**光标**所在的位置。
+The positions of elements created, disappeared, and transformed will follow the current **cursor** position.
 
-但是，注意这里有3种情况：
-- 若光标处于某个关键词中，那么元素的创建、消失都是在**当前**的关键词中。
-而删除的元素，则是取决于它自己在之前的哪个关键词中创建。
-- 若光标处于非关键词中，且前面有关键词（仅限本段落），那么元素的创建、消失都是在前面最近的关键词中。
-删除的元素，也是取决于它自己在之前的哪个关键词中创建
-- 若光标处于非关键词中，但是前面（仅限本段落）没有关键词，元素会在段落的开头箭头中，
-点击 → 或者 ↳ 可以看到。
+However, note that there are 3 situations:
+-If the cursor is in a certain keyword, the creation and disappearance of the element are all in the **current** keyword.
+The deleted element depends on which keyword it was created in.
+-If the cursor is in a non-keyword and there is a keyword in front of it (only in this paragraph), then the creation and disappearance of the element are all in the nearest keyword in front.
+The deleted element also depends on which previous keyword it was created in
+-If the cursor is in a non-keyword, but there is no keyword in front (this paragraph only), the element will be in the arrow at the beginning of the paragraph,
+Tap → or ↳ to see.
 
-变换的按钮可以让元素在出现后，再变换。同一个元素可以在出现之后的多个关键词，有多次变化。
-还有，删除当前的元素，并不会删除变换前的元素，还有之后再次变换的元素。
+The transform button allows the element to be transformed after it appears. The same element can have multiple changes after multiple keywords appear.
+Also, deleting the current element will not delete the element before the transformation, and the element that will be transformed again afterwards.
 
-可以针对元素的出现（创建）、消失设置过渡动画。
-变换的动画目前无法设置，会针对每一种元素有自动的过渡动画。
+You can set transition animations for the appearance (creation) and disappearance of elements.
+The transformation animation cannot be set at present, and there will be an automatic transition animation for each element.
 
-关于更多的动画概念和设置，可以[参看这里](/tutorial/make-animation)。
+For more animation concepts and settings, you can [see here](/tutorial/make-animation).
 
-### 创建
-在工具栏中，可以选择任意一个按钮，可以创建元素。
-可以将鼠标放到任意一个图标上，等一小会儿之后会显示该按钮对应的创建的元素类型。
+### Create
+In the toolbar, you can select any button to create an element.
+You can place the mouse on any icon, and the created element type corresponding to the button will be displayed after a short while.
 
-### 粘贴
-- 若剪切板中是图片（gif也可以，有时候不灵），在右边画面空白处，鼠标右键，选择**粘贴**即可。
-可以用快捷键Ctrl+V。
+### Paste
+-If there is a picture in the clipboard (gif is also available, sometimes it doesn't work), right-click on the blank area of ​​the screen on the right and select **Paste**.
+You can use the shortcut key Ctrl+V.
 
-- 若剪切板中是文字，需要先创建文本框，在文本框聚焦的情况下，再粘贴。
+-If there is text in the clipboard, you need to create a text box first, and then paste it when the text box is focused.
 
-- 若剪切板是其他地方（可以其他文稿中的）复制的元素，那么粘贴会创建新的元素。
+-If the clipboard is an element copied elsewhere (which can be in another document), then pasting will create a new element.
 
-## 元素种类
-在画面中可以添加的元素有
+## Element type
+The elements that can be added to the screen are
 
-### 文字
-文本框，目前还不支持字体的设置、部分文字的编辑。所以，目前只能整体设置文字格式。
-### 图片
-支持位图（如：jpg、png），也支持矢量图svg。
+### Word
+The text box currently does not support font setting and editing of part of the text. Therefore, currently only the text format can be set as a whole.
+### picture
+It supports bitmaps (such as jpg, png) and vector svg.
 
-而且还可以是动态图gif。
-但是，导入的gif会自动变成视频，因为这样容易控制播放、进度条。
+And it can also be a dynamic gif.
+However, the imported gif will automatically become a video, because it is easy to control the playback and progress bar.
 
-### 视频
-支持大部分视频格式。但是，最好是mp4、webm。
-若导入其他格式视频，软件会先转换成上述的格式，会比较慢、占用空间更多。
+### Video
+Support most video formats. However, mp4 and webm are best.
+If you import videos in other formats, the software will first convert to the above formats, which will be slower and take up more space.
 
-目前视频的支持程度不是很好。不太适合大量视频作为素材，以后会逐步改进。
+The current video support level is not very good. Not suitable for a large number of videos as material, and will be gradually improved in the future.
 
-### 形状
-目前只支持方框。可以在右下角的设置框中，**边框**中调整圆角的**弧度**。若圆角弧度为50度，就是椭圆或圆形。
-### 连线
-默认是直线。可以设置头尾的箭头。
-若需要曲线或折线，可以让鼠标在线段上任意处**双击**，创建一个转折点。
-### 镜头
-通过对镜头的控制，可以实现画面放大缩小的视觉效果。
+### Shape
+Only boxes are currently supported. You can adjust the radius of the rounded corners in the **frame** in the setting box in the lower right corner. If the radius of the fillet is 50 degrees, it is an ellipse or a circle.
+### Connect
+The default is straight line. You can set the head and tail arrows.
+If you need a curve or a polyline, you can use the mouse to **double-click** anywhere on the line segment to create a turning point.
+### Lens
+Through the control of the lens, the visual effect of zooming in and out of the screen can be achieved.
 
-具体对于各种元素的设置，当元素被聚焦的时候，右下角的设置框中可以设置。
+Specifically for the settings of various elements, when the element is focused, the settings box in the lower right corner can be set.
 
-## 元素的作用域
-每一个段落是一个独立的段落，就好像是PPT中的一页slide。
-所以，如果本段的元素到最后都没有设置**消失**，进入下一段就会自动**消失**。
+## Scope of elements
+Each paragraph is an independent paragraph, just like a slide in a PPT.
+Therefore, if the elements of this paragraph are not set to **disappear** at the end, they will automatically **disappear** when entering the next paragraph.
 
-当然，如果下一段和本段联系比较紧密，需要保留本段的元素。可以到下一段的更多按钮中，点击**继承上一段**。
-下一段的左上角会由 → 改成 ↳了。再点一次，就恢复到原样了。
+Of course, if the next paragraph is more closely related to this paragraph, you need to retain the elements of this paragraph. You can go to the More button in the next paragraph and click **Inherit the previous paragraph**.
+The upper left corner of the next paragraph will be changed from → to ↳. Click it again and it will be restored to its original condition.
 !()[]
 
-## 
+##

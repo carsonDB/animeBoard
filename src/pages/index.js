@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import { Link, useTranslation } from 'gatsby-plugin-react-i18next'
+import { Link, useI18next, useTranslation } from 'gatsby-plugin-react-i18next'
 import React, { useState } from "react"
 import { Badge, Button, ListGroup, Modal } from 'react-bootstrap'
 import { Helmet } from "react-helmet"
@@ -38,6 +38,7 @@ export default function IndexPage() {
 const version = `0.4.1`
 const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
+    const { language: lang } = useI18next()
     const { t } = useTranslation()
 
     return <div>
@@ -52,7 +53,7 @@ const Intro = () => {
                     href={`https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe`}>
                 {t('download')}(win64)
             </Button>{' '}
-            {downloadPrompt && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
+            {downloadPrompt && lang === 'zh' && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
             <Button variant='info' as={Link} to='/tutorial/quick-started' >{t('quickStarted')}</Button>{' '}
             <Button size='sm' variant='secondary' as={Link} to='#feedback' >
                 {t('feedback')}
@@ -60,24 +61,23 @@ const Intro = () => {
         </div>
         <div>{t('onlyWin64')}</div>
         <br /><br />
-        {/* <Examples /> */}
+        {lang === 'zh' && <Examples />}
         <br />
     </div>
 }
 
-// const Examples = () => {
-//     return <div>
-//         <h4>例子:</h4>
-//         <a href='http://anime-board.oss-cn-beijing.aliyuncs.com/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB.zip'
-//             target="_blank" >
-//             进程和线程的区别
-//         </a>
-//         （下载压缩包，解压后即可导入）
-//         <br />
-//         发布的视频(<a href='https://www.ixigua.com/i6926416351611322891/' >西瓜视频</a>
-//         , <a href='https://www.bilibili.com/video/BV1Wr4y1P7Yr/' >B站</a>)
-//     </div>
-// }
+const Examples = () => {
+    return <div>
+        <h4>例子:</h4>
+        <a href='http://anime-board.oss-cn-beijing.aliyuncs.com/%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%8C%BA%E5%88%AB.zip' >
+            进程和线程的区别
+        </a>
+        （下载压缩包，解压后即可导入）
+        <br />
+        发布的视频(<a href='https://www.ixigua.com/i6926416351611322891/' >西瓜视频</a>
+        , <a href='https://www.bilibili.com/video/BV1Wr4y1P7Yr/' >B站</a>)
+    </div>
+}
 
 function Feedback() {
     const { t } = useTranslation()

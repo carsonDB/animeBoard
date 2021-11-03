@@ -4,84 +4,84 @@ lang: en
 title: "Make animations"
 ---
 
-本章将带您了解有关于可视化动画的一切。
+This chapter will take you to know everything about visual animation.
 
-# 基础动画设置
+# Basic animation settings
 
-## 动画概念
-这里的动画，如果用更合适的话，应该叫**动效(motion graphics/design)**。
-也就是更多的是关于元素的运动，而不是画图画的动画（比如：白板动画）。
-在这个软件中，动画主要用在内容可视化上，可以更好地帮助观众理解内容。
+## Animation concept
+The animation here, if more appropriate, should be called **motion graphics/design**.
+That is, it is more about the movement of the elements than the animation of drawing pictures (such as: whiteboard animation).
+In this software, animation is mainly used for content visualization, which can better help the audience understand the content.
 
-## 动画种类
-在软件中，一共有5种动画类型：
+## Animation type
+In the software, there are 5 animation types:
 
-### 出现动画 / 消失动画
-元素的产生，或消失，所产生的动画。
-在右下角的**运动**标签中，可以设置具体的动画方式。
+### Appearing animation / Disappearing animation
+The creation or disappearance of elements, the resulting animation.
+In the **sports** tab in the lower right corner, you can set specific animation methods.
 
-#### 出现动画类型
-先以基本的方框动画开始
-- 淡入 ![](../images/fadeUp.gif)
-- 放大淡入 ![](../images/scaleFadeUp.gif)
-- 移动淡入 ![](../images/appearMoveFade.gif)
-- 切入 ![](../images/peekIn.gif)
-- 擦入 ![](../images/wideIn.gif)
-- 闪入 ![](../images/flashAppear.gif)
-- 复制源移入 同一页面中，同一类元素（如方框）![](../images/moveFromCopy.gif)。
-- 描绘 ![](../images/svgAppear.gif)
+#### Appears animation type
+Let’s start with a basic box animation
+-Fade in ![](../images/fadeUp.gif)
+-Zoom in and fade in ![](../images/scaleFadeUp.gif)
+-Move fade in ![](../images/appearMoveFade.gif)
+-Cut in ![](../images/peekIn.gif)
+-Wipe in ![](../images/wideIn.gif)
+-Flash in ![](../images/flashAppear.gif)
+-The copy source is moved into the same page, the same type of element (such as a box)![](../images/moveFromCopy.gif).
+-Depict ![](../images/svgAppear.gif)
 
 
-### 转换动画
-同一个元素，从一种状态转换成另一种状态的过渡动画。这个不需要自己设置。
-软件会根据特定的元素类型，自己决定过渡的动画样式。
+### Conversion animation
+The transition animation of the same element from one state to another state. This does not need to be set by yourself.
+The software will decide the transition animation style by itself according to the specific element type.
 
-### 伴随性动画
-只要元素在画面中，它就会持续产生（通常是循环）动画。
-比如：视频中某一小段时间，只有一张静态的图片，观众容易视觉疲劳。
-这时在伴随性动画中设置，比如：slowlyMove(缓慢移动)，视觉效果会好很多。
+### Accompanying animation
+As long as the element is in the frame, it will continue to produce (usually looping) animations.
+For example, there is only one static picture for a short period of time in the video, and the viewer is prone to visual fatigue.
+At this time, set it in the accompanying animation, such as: slowlyMove (slowly moving), the visual effect will be much better.
 
-## 不同元素的动画
+## Animation of different elements
 
-### 文字动画
-文字在做切换动画时，软件会比较前后文本内容，自动判断新加的文字、删除的文字、保留的文字。
-针对这3种文字，自动产生对应的动画。
+### Text animation
+When the text is switching animation, the software will compare the content of the text before and after it, and automatically judge the newly added text, the deleted text, and the retained text.
+For these 3 types of text, the corresponding animation is automatically generated.
 
-### 镜头变化
-没有元素聚焦的时候，右下角显示的就是本场景的设置框。
-设置框中的第一个缩略图，反应的就是当前镜头的状态。默认是覆盖全部。
-把鼠标放到上面，用鼠标的滚轮上下滚动，您就可以看到，镜头的放大、缩小。
-然后，鼠标拖动绿色的覆盖块，就可以移动镜头了。
+### Camera changes
+When there is no element in focus, the setting frame of this scene is displayed in the lower right corner.
+The first thumbnail in the settings box reflects the current camera status. The default is to cover all.
+Put the mouse on it, scroll up and down with the mouse wheel, you can see the zoom in and zoom out of the lens.
+Then, drag the green covering block with the mouse to move the lens.
 ![](../images/sceneScroll.gif)
 
-场景切换的时间若是**0**时（默认），镜头就是突然切换。若需要镜头过渡动画，则设置对应的时间就可以了。
+If the scene switching time is **0** (default), the lens is suddenly switched. If the camera transition animation is needed, just set the corresponding time.
 
 
-# 高级动画设置
-基本的动画已经可以满足大部分的需求了。有时候，为了追求更好的视觉效果，
-和更加精细化的动画实现，可能会用到以下一些设置。
+# Advanced animation settings
+Basic animation can already meet most of the needs. Sometimes, in order to pursue better visual effects,
+And more refined animation implementation, the following settings may be used.
 
-## 序列性动画
-在[元素与关键词](/tutorial/elements-keyword)中，每次元素的变化，都是处于某一个关键词中。
-但是，如果现在想要让一个元素按照顺序做多个动画，比如：让一个小球先变大，再移动，再变小。
-那么，这样它就需要3个关键词来触发3个动画。那么现在，序列性动画可以让这3个动画合起来，由一个关键词触发。
+## Sequential animation
+In [Elements and Keywords](/tutorial/elements-keyword), every time an element changes, it is in a certain keyword.
+However, if you now want to make an element do multiple animations in sequence, for example, make a small ball first become bigger, then move, and then become smaller.
+So, so it needs 3 keywords to trigger 3 animations. So now, sequential animations can combine these three animations and be triggered by a single keyword.
 
-几乎每个元素，您都可以在元素聚焦后，看到右下设置框的右上角有一排数字。初始时只有一个0。代表一个阶段。
-每按一次加号，就可以创建多个阶段。不同的阶段的切换，中间会自动产生过渡动画。
+For almost every element, you can see a row of numbers in the upper right corner of the lower right setting box after the element is focused. There is only one 0 at the beginning. Represents a stage.
+Each time you press the plus sign, multiple stages can be created. When switching between different stages, transition animations are automatically generated in the middle.
 ![](../images/stages.jpg)
 
 ---
-以下施工中。。。
+The following is under construction. . .
 ---
 
 
-## 等时差动画
-当有许多的元素一起运动的时候，比如一起出现。
+## Isochronous animation
+When there are many elements moving together, such as appearing together.
 ![]()
-那么，同时出现可能不是很好看。
-设置每个元素的延迟，按照等差数列，就会出现更好看的群体动画。
+Well, the simultaneous appearance may not be very beautiful.
+Set the delay of each element, according to the arithmetic sequence, there will be a better-looking crowd animation.
 ![]()
 
-这里的延迟设置是按照您选中元素的顺序来安排的。
-您可以手动设置元素的聚焦顺序，就可以改变出现的顺序。
+The delay setting here is arranged according to the order of the elements you selected.
+You can manually set the focus order of the elements, you can change the order of appearance.
 ![]()

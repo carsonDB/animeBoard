@@ -16,7 +16,7 @@ const i18next = [
       siteUrl: `https://carsondb.github.io/animeBoard`,
       // you can pass any i18next options
       // pass following options to allow message content as a key
-      redirect: false,
+      // redirect: false,
       i18nextOptions: {
         interpolation: {
           escapeValue: false // not needed for react as it escapes by default

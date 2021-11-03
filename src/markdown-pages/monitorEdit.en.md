@@ -4,33 +4,34 @@ lang: en
 title: "Monitor editing"
 ---
 
-本章将带您介绍右上角画面编辑的所有内容，包括快捷技巧。
 
-## 多个元素的编辑
+This chapter will take you to introduce all the content of the screen editing in the upper right corner, including shortcut skills.
 
-### 元素多选
-有两种方式来选择多个元素。
-1. 按住`Ctrl`，鼠标点击多个元素，可以多选。
-2. 从空白处拖动，有红色的框涉及的元素均会聚焦。
+## Editing multiple elements
 
-将以上两种结合，在`Ctrl`按住的情况下，除了框住的元素，之前聚焦的元素也继续聚焦。
+### Multiple selection of elements
+There are two ways to select multiple elements.
+1. Hold down `Ctrl` and click on multiple elements to select multiple elements.
+2. Drag from the blank space, the elements involved in the red frame will be focused.
 
-### 选择顺序
-您在选择元素的先后顺序，将会作为之后设置时的顺序依据。
-比如，时间等差延迟、颜色渐变等。
+Combining the above two, when the `Ctrl` is held down, in addition to the framed element, the previously focused element will continue to be focused.
 
-### 多个元素设置
-将多个元素选中(聚焦)后，右下的设置框中，有的可以设置渐变的效果，比如：
+### Selection order
+The order in which you select the elements will be used as the basis for the order in the subsequent settings.
+For example, time arithmetic delay, color gradient, etc.
+
+### Multiple element settings
+After selecting (focusing) multiple elements, in the lower right setting box, some can set the gradient effect, such as:
 ![](../images/bg_colors_setting.jpg)
 
-第一个颜色代表第一个元素，第二个代表最后一个元素。
-设置第一个元素的颜色时，会将所有元素统一设置成一样的颜色。
-在这个基础上，设置第二个时，除了设置最后一个元素的颜色外，还会设置从第一个到最后一个中间的所有颜色，成渐变颜色。
+The first color represents the first element, and the second represents the last element.
+When setting the color of the first element, all elements will be uniformly set to the same color.
+On this basis, when setting the second one, in addition to setting the color of the last element, all the colors from the first to the last are also set as a gradient color.
 
-类似的方法还可以在[制作动画](/tutorial/make-animation)中关于多个元素延迟看到。
+A similar method can also be seen in [making animation](/tutorial/make-animation) about multiple elements delay.
 
-## 复制多个元素
-如果想把一个元素复制成多个，可以按住`Ctrl`键，然后拖动元素，它就会变成两个。
+## Copy multiple elements
+If you want to copy one element into multiple, you can hold down the `Ctrl` key and drag the element, it will become two.
 
-其实，多个元素聚焦时也是一样，`Ctrl`键按住后，拖动任一聚焦的元素后，全部复制一份。
+In fact, the same is true when multiple elements are focused. After pressing the `Ctrl` key, drag any focused element to copy all of them.
 ![](../images/copyByDrag.gif)

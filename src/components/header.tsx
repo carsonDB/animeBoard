@@ -1,6 +1,6 @@
 import { Link, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 import React, { useState } from 'react';
-import { Button, Modal, Nav, Navbar } from 'react-bootstrap';
+import { Button, Modal, Nav, Navbar, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
@@ -13,7 +13,7 @@ export default function Header() {
     const {languages, changeLanguage} = useI18next()
 
     return <StyledHeader>
-        <Navbar bg="dark" variant="dark" style={{textTransform: 'capitalize'}} >
+        <Navbar bg="dark" variant="dark" style={{textTransform: 'capitalize', paddingLeft: '1em'}} >
             <Navbar.Brand as={Link} to="/">{t('homePage')}</Navbar.Brand>
             <Navbar.Brand as={Link} to="/tutorial/document-list">{t('doc')}</Navbar.Brand>
             <Navbar.Brand style={{cursor: 'pointer'}} onClick={() => setPrice(true)} >{t('price')}</Navbar.Brand>
