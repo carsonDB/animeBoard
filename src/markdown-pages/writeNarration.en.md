@@ -22,7 +22,7 @@ Click the play button above each paragraph to preview the paragraph.
 
 ## subtitle
 When writing a manuscript, the subtitles are turned on by default and can be set in the more buttons.
-![](../images/subtitleButton.jpg)
+![](../images/subtitleButton.en.jpg)
 
 ## Language
 Support English and Chinese. That is, it will determine the language of the manuscript according to the proportion of the number of Chinese and the proportion of the number of English in the manuscript.

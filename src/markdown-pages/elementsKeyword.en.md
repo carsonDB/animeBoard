@@ -51,7 +51,7 @@ You can use the shortcut key Ctrl+V.
 The elements that can be added to the screen are
 
 ### Word
-The text box currently does not support font setting and editing of part of the text. Therefore, currently only the text format can be set as a whole.
+The text box.
 ### picture
 It supports bitmaps (such as jpg, png) and vector svg.
 
@@ -65,7 +65,7 @@ If you import videos in other formats, the software will first convert to the ab
 The current video support level is not very good. Not suitable for a large number of videos as material, and will be gradually improved in the future.
 
 ### Shape
-Only boxes are currently supported. You can adjust the radius of the rounded corners in the **frame** in the setting box in the lower right corner. If the radius of the fillet is 50 degrees, it is an ellipse or a circle.
+Support some basic graphics such as boxes and ellipses.
 ### Connect
 The default is straight line. You can set the head and tail arrows.
 If you need a curve or a polyline, you can use the mouse to **double-click** anywhere on the line segment to create a turning point.
@@ -78,8 +78,5 @@ Specifically for the settings of various elements, when the element is focused, 
 Each paragraph is an independent paragraph, just like a slide in a PPT.
 Therefore, if the elements of this paragraph are not set to **disappear** at the end, they will automatically **disappear** when entering the next paragraph.
 
-Of course, if the next paragraph is more closely related to this paragraph, you need to retain the elements of this paragraph. You can go to the More button in the next paragraph and click **Inherit the previous paragraph**.
-The upper left corner of the next paragraph will be changed from → to ↳. Click it again and it will be restored to its original condition.
-!()[]
-
-##
+Of course, if the previous paragraph is closely related to this paragraph, the previous elements need to be retained. You can click → at the beginning of the paragraph,
+Then turn on the switch, and the beginning of the paragraph is changed to ↳.

@@ -12,6 +12,11 @@ export default function Header() {
     const { t } = useTranslation()
     const {languages, changeLanguage} = useI18next()
 
+    const langMap = {
+        zh: '中文',
+        en: 'English'
+    }
+
     return <StyledHeader>
         <Navbar bg="dark" variant="dark" style={{textTransform: 'capitalize', paddingLeft: '1em'}} >
             <Navbar.Brand as={Link} to="/">{t('homePage')}</Navbar.Brand>
@@ -20,7 +25,9 @@ export default function Header() {
             <Navbar.Collapse className="justify-content-end">{
                 languages.map(lang => 
                     <Nav.Item key={lang} >
-                        <Nav.Link onClick={() => changeLanguage(lang)} style={{color: 'lightGray'}} >{t(lang)}</Nav.Link>
+                        <Nav.Link onClick={() => changeLanguage(lang)} style={{color: 'lightGray'}} >
+                            {langMap[lang]}
+                        </Nav.Link>
                     </Nav.Item>)
             }</Navbar.Collapse>
         </Navbar>

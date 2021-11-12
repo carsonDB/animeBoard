@@ -52,7 +52,7 @@ When there is no element in focus, the setting frame of this scene is displayed 
 The first thumbnail in the settings box reflects the current camera status. The default is to cover all.
 Put the mouse on it, scroll up and down with the mouse wheel, you can see the zoom in and zoom out of the lens.
 Then, drag the green covering block with the mouse to move the lens.
-![](../images/sceneScroll.gif)
+![](../images/sceneScroll.en.gif)
 
 If the scene switching time is **0** (default), the lens is suddenly switched. If the camera transition animation is needed, just set the corresponding time.
 
@@ -68,7 +68,7 @@ So, so it needs 3 keywords to trigger 3 animations. So now, sequential animation
 
 For almost every element, you can see a row of numbers in the upper right corner of the lower right setting box after the element is focused. There is only one 0 at the beginning. Represents a stage.
 Each time you press the plus sign, multiple stages can be created. When switching between different stages, transition animations are automatically generated in the middle.
-![](../images/stages.jpg)
+![](../images/stages.en.jpg)
 
 ---
 The following is under construction. . .

@@ -23,16 +23,29 @@ export default function IndexPage() {
         <SEO title={t('AnimeBoard')} />
         <Header />
         <div style={pageStyles}>
-                <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 50}} >
-                    <Intro />
-                    <iframe src="//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=1" 
-                        title='bilibli' style={VideoStyle}
-                        scrolling="no" border="0" frameBorder="no" framespacing="0" allowFullScreen={true} />
-                </div>
+            <div style={{display: "grid", gridTemplateColumns: '50% auto', columnGap: 50}} >
+                <Intro />
+                <IntroVideo />
+            </div>
         </div>
         <hr style={{color: 'black', height: 1}} />
         <Feedback />
     </div>
+}
+
+const bilibiliVideo = "//player.bilibili.com/player.html?bvid=BV1aa411F7Y2&page=2"
+const youtubeVideo = "https://www.youtube.com/embed/D4Fj_fieS5w"
+const IntroVideo = () => {
+    const { language: lang } = useI18next()
+    const src = lang === 'zh' ? bilibiliVideo : youtubeVideo
+
+    return <iframe src={src} 
+        style={VideoStyle} 
+        scrolling="no" 
+        border="0" 
+        frameBorder="no" 
+        framespacing="0" 
+        allowFullScreen={true} />
 }
 
 const version = `0.4.1`
@@ -40,6 +53,9 @@ const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
     const { language: lang } = useI18next()
     const { t } = useTranslation()
+    const downloadUrl = lang === 'zh' ? 
+        `https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe` :
+        `https://anime-board.oss-cn-beijing.aliyuncs.com/download-en/anime-board Setup ${version}.exe`
 
     return <div>
         <h2>
@@ -49,8 +65,7 @@ const Intro = () => {
             {t('appIntro')}
         <br />
         <div style={{margin: '10px 0px'}} >
-            <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} 
-                    href={`https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe`}>
+            <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} href={downloadUrl}>
                 {t('download')}(win64)
             </Button>{' '}
             {downloadPrompt && lang === 'zh' && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}

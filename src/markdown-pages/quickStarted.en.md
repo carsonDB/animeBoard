@@ -28,33 +28,32 @@ If you need to understand the function in depth, you can refer to [detailed docu
 
 ## Create element
 Select any text as a keyword, and select the box in the tool box that appears.
-![](../images/createBox.gif)
+![](../images/createBox.en.gif)
 
 Then, drag in the screen on the right to create it.
-<!-- ![](../images/dragTocreateBox.gif) -->
 
 For the creation and deletion of elements, and their relationship with keywords, please refer to [Elements and Keywords](/tutorial/elements-keyword)
 
 ## Adjust elements
-When the element is focused, go to the setting box in the lower right corner to set the element's attributes. Here, the right-angle angle is changed to a circular arc.
-![](../images/setBox.gif)
+When the element is focused, go to the setting box in the lower right corner to set the element's attributes. 
+<!-- ![](../images/setBox.gif) -->
 
 For detailed editing of elements in the screen, please refer to [Screen Editing](/tutorial/monitor-edit)
 
 ## Create key points
 Select a word in the following text, and then click the `⊕` button to create a new key point for the element (similar to a key frame).
-![](../images/createKeypoint.gif)
+![](../images/createKeypoint.en.gif)
 
 Such an element has two states (keywords).
 
 Place the cursor on or after the second keyword, and then change elements in the screen, such as dragging.
 Then, click the preview button `▶` on the left, and the effect is as follows:
-![](../images/animate.gif)
+![](../images/animate.en.gif)
 
 When playing, the software will automatically connect the state of the same element to become a `transition animation`.
 
 Similarly, animations such as disappearing can also be set (**No need to set key points anymore**).
-![](../images/disappearButtonWithHint.jpg)
+![](../images/disappearButtonWithHint.en.jpg)
 
 **Note: Hover (hover) the mouse on any button for a short while, there will be a prompt. **
 
@@ -68,7 +67,7 @@ Each paragraph is recorded separately (practice has proved that the shorter each
 Click the recording button to start, and click again to start the text and the recording to automatically align. This takes about 10-20 seconds.
 You can also continue to record the next paragraph while waiting, and support multiple paragraphs to be recognized at the same time.
 In addition, please try to record in a quiet environment, noise will affect the recognition success rate.
-![](../images/recordAndAlign.gif)
+![](../images/recordAndAlign.en.jpg)
 
 You can record repeatedly, and you can add/delete audio.
 

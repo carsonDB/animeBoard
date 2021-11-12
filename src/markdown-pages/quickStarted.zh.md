@@ -22,7 +22,7 @@ title: "快速入门"
 ## 写文稿
 左边框中的写文稿，每一段文字作为一幕（场景）。
 
-如果需要深入了解功能，可以参看[文稿的详细文档](/tutorial/write-narration)
+如果需要深入了解功能，可以参看[文稿的详细文档](/zh/tutorial/write-narration)
 
 
 ## 创建元素
@@ -32,13 +32,13 @@ title: "快速入门"
 然后，在右边的画面中拖动来创建。
 <!-- ![](../images/dragTocreateBox.gif) -->
 
-关于元素的创建、删除，然后它们与关键词的关系，可以参看[元素与关键词](/tutorial/elements-keyword)
+关于元素的创建、删除，然后它们与关键词的关系，可以参看[元素与关键词](/zh/tutorial/elements-keyword)
 
 ## 调整元素
 在元素被聚焦的情况下，到右下角的设置框中设置元素的属性。这里把直角角度变圆弧。
 ![](../images/setBox.zh.gif)
 
-关于详细的画面中元素的编辑，可以参看[画面编辑](/tutorial/monitor-edit)
+关于详细的画面中元素的编辑，可以参看[画面编辑](/zh/tutorial/monitor-edit)
 
 ## 创建关键点
 在后面的文中选择一个词，然后点击`⊕`按钮，可以创建元素新的关键点（类似于关键帧）。
@@ -58,7 +58,7 @@ title: "快速入门"
 **注：鼠标放(悬停)在任一按钮上一小会儿，就会有提示。**
 
 
-关于更多的动画制作，可以参看[动画制作](/tutorial/make-animation)
+关于更多的动画制作，可以参看[动画制作](/zh/tutorial/make-animation)
 
 ## 录音
 如果您不想录音，可以直接跳过这一步，在导出时软件会自动加上机读的配音。
@@ -71,13 +71,13 @@ title: "快速入门"
 
 可以反复录音，还可以添加/删除音频。
 
-关于更多的录音与对齐，可以参看[录音和对齐](/tutorial/record-and-align)
+关于更多的录音与对齐，可以参看[录音和对齐](/zh/tutorial/record-and-align)
 
 ## 导出视频
 然后点击左上角菜单中`☰`的`导出...`选项，设置一下，就可以导出了。
 
 
 # 详细文档
-详细的文档和视频教程请点击[这里](/tutorial/document-list)
+详细的文档和视频教程请点击[这里](/zh/tutorial/document-list)
 
 
