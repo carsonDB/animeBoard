@@ -53,9 +53,7 @@ const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
     const { language: lang } = useI18next()
     const { t } = useTranslation()
-    const downloadUrl = lang === 'zh' ? 
-        `https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe` :
-        `https://anime-board.oss-cn-beijing.aliyuncs.com/download-en/anime-board Setup ${version}.exe`
+    const downloadUrl = `https://anime-board.oss-cn-beijing.aliyuncs.com/download/anime-board Setup ${version}.exe`
 
     return <div>
         <h2>
@@ -96,12 +94,13 @@ const Examples = () => {
 
 function Feedback() {
     const { t } = useTranslation()
+    const { language: lang } = useI18next()
 
     return <div style={{display: 'flex', justifyContent: 'center', margin: '30px'}} >
         <div>
         <h3 style={{textAlign: 'center'}} ><a id="feedback" >{t("welcomeFeedback")}</a></h3>
         <ListGroup style={{width: '30vw'}} >
-            <ListGroup.Item>{t('community')}</ListGroup.Item>
+            <ListGroup.Item>{lang === 'zh' ? t('community') : <a href='https://join.slack.com/t/animeboard/shared_invite/zt-yz7ugr8z-7Npooh1PthbAAQdrEbxg~A'>Slack</a>}</ListGroup.Item>
             <ListGroup.Item>{t('email')}：carsondb@qq.com</ListGroup.Item>
             <ListGroup.Item><a href="https://github.com/carsonDB/animeBoard/issues" >Github issue</a></ListGroup.Item>
             <ListGroup.Item><a href="https://gitee.com/carsonDB/animeBoard/issues" >Gitee issue</a></ListGroup.Item>
