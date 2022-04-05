@@ -48,7 +48,7 @@ const IntroVideo = () => {
         allowFullScreen={true} />
 }
 
-const version = `0.4.3`
+const version = `0.4.4`
 const Intro = () => {
     const [downloadPrompt, setDownloadPrompt] = useState(false)
     const { language: lang } = useI18next()
