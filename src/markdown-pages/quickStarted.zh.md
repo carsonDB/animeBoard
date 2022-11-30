@@ -7,7 +7,7 @@ title: "快速入门"
 本章将带您快速做一个最简单的视频。
 
 ## 下载安装
-目前，软件(测试版)下载若有问题请看[视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=2&share_source=copy_web)。
+目前，软件(测试版)下载若有问题请看[视频教程](https://www.bilibili.com/video/BV1aa411F7Y2?p=3&share_source=copy_web)。
 
 ## 创建视频项目（文件夹）
 初次打开软件，就会有一个弹窗，选择一个空文件夹，作为项目存储的地方。
