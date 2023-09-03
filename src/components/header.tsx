@@ -8,7 +8,7 @@ const StyledHeader = styled.div`
 `
 
 export default function Header() {
-    const [price, setPrice] = useState(false)
+    // const [price, setPrice] = useState(false)
     const { t } = useTranslation()
     const {languages, changeLanguage} = useI18next()
 
@@ -21,7 +21,7 @@ export default function Header() {
         <Navbar bg="dark" variant="dark" style={{textTransform: 'capitalize', paddingLeft: '1em'}} >
             <Navbar.Brand as={Link} to="/">{t('homePage')}</Navbar.Brand>
             <Navbar.Brand as={Link} to="/tutorial/document-list">{t('doc')}</Navbar.Brand>
-            <Navbar.Brand style={{cursor: 'pointer'}} onClick={() => setPrice(true)} >{t('price')}</Navbar.Brand>
+            {/* <Navbar.Brand style={{cursor: 'pointer'}} onClick={() => setPrice(true)} >{t('price')}</Navbar.Brand> */}
             <Navbar.Collapse className="justify-content-end">{
                 languages.map(lang => 
                     <Nav.Item key={lang} >
@@ -32,7 +32,7 @@ export default function Header() {
             }</Navbar.Collapse>
         </Navbar>
 
-        <Modal show={price} onHide={() => setPrice(false)}>
+        {/* <Modal show={price} onHide={() => setPrice(false)}>
             <Modal.Header closeButton>
             <Modal.Title>{t('price')}</Modal.Title>
             </Modal.Header>
@@ -44,6 +44,6 @@ export default function Header() {
                 {t('close')}
             </Button>
             </Modal.Footer>
-        </Modal>
+        </Modal> */}
     </StyledHeader>
 }

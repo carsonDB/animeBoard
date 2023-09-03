@@ -28,8 +28,8 @@ export default function IndexPage() {
                 <IntroVideo />
             </div>
         </div>
-        <hr style={{color: 'black', height: 1}} />
-        <Feedback />
+        {/* <hr style={{color: 'black', height: 1}} />
+        <Feedback /> */}
     </div>
 }
 
@@ -68,9 +68,9 @@ const Intro = () => {
             </Button>{' '}
             {downloadPrompt && lang === 'zh' && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
             <Button variant='info' as={Link} to='/tutorial/quick-started' >{t('quickStarted')}</Button>{' '}
-            <Button size='sm' variant='secondary' as={Link} to='#feedback' >
+            {/* <Button size='sm' variant='secondary' as={Link} to='#feedback' >
                 {t('feedback')}
-            </Button>
+            </Button> */}
         </div>
         <div>{t('onlyWin64')}</div>
         <br /><br />
