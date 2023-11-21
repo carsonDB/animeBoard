@@ -28,8 +28,8 @@ export default function IndexPage() {
                 <IntroVideo />
             </div>
         </div>
-        {/* <hr style={{color: 'black', height: 1}} />
-        <Feedback /> */}
+        <hr style={{color: 'black', height: 1}} />
+        <Feedback />
     </div>
 }
 
@@ -41,9 +41,7 @@ const IntroVideo = () => {
 
     return <iframe src={src} 
         style={VideoStyle} 
-        scrolling="no" 
         border="0" 
-        frameBorder="no" 
         framespacing="0" 
         allowFullScreen={true} />
 }
@@ -66,13 +64,15 @@ const Intro = () => {
             <Button variant='success' onClick={() => setTimeout(() => setDownloadPrompt(true), 3000)} href={downloadUrl}>
                 {t('download')}(win64)
             </Button>{' '}
+            <Button variant="light">
+                <a href='https://moboard.netlify.app'>{t('onlineVersion')}</a>
+            </Button>{' '}
             {downloadPrompt && lang === 'zh' && <DownloadPrompt onCancel={() => setDownloadPrompt(false)} />}
             <Button variant='info' as={Link} to='/tutorial/quick-started' >{t('quickStarted')}</Button>{' '}
-            {/* <Button size='sm' variant='secondary' as={Link} to='#feedback' >
+            <Button size='sm' variant='secondary' as={Link} to='#feedback' >
                 {t('feedback')}
-            </Button> */}
+            </Button>
         </div>
-        <div>{t('onlyWin64')}</div>
         <br /><br />
         {lang === 'zh' && <Examples />}
         <br />

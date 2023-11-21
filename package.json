@@ -8,6 +8,7 @@
     ],
     "scripts": {
         "develop": "gatsby develop",
+        "node16": "nvm use 16",
         "start": "gatsby clean && npm run develop",
         "build": "gatsby clean && gatsby build --prefix-paths",
         "serve": "gatsby serve --prefix-paths",
